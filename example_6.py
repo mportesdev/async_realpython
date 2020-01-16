@@ -20,13 +20,13 @@ async def main():
     work_queue = asyncio.Queue()
 
     for url in [
-        'http://google.com',
-        'http://yahoo.com',
-        'http://linkedin.com',
-        'http://apple.com',
-        'http://microsoft.com',
-        'http://facebook.com',
-        'http://twitter.com',
+        'https://google.com',
+        'https://yahoo.com',
+        'https://linkedin.com',
+        'https://apple.com',
+        'https://microsoft.com',
+        'https://facebook.com',
+        'https://twitter.com',
     ]:
         await work_queue.put(url)
 
