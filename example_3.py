@@ -1,13 +1,13 @@
-import queue
+from queue import Queue
 import time
 
 from codetiming import Timer
 
 
-def task(name, queue):
+def task(name, work_queue: Queue):
     timer = Timer(text=f'Task {name} elapsed time: {{:.1f}}')
-    while not queue.empty():
-        delay = queue.get()
+    while not work_queue.empty():
+        delay = work_queue.get()
         print(f'Task {name} running')
         timer.start()
         time.sleep(delay)
@@ -16,7 +16,7 @@ def task(name, queue):
 
 
 def main():
-    work_queue = queue.Queue()
+    work_queue = Queue()
 
     for work in [8, 5, 3, 1]:
         work_queue.put(work)

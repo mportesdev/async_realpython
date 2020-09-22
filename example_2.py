@@ -1,9 +1,9 @@
-import queue
+from queue import Queue
 
 
-def task(name, queue):
-    while not queue.empty():
-        count = queue.get()
+def task(name, work_queue: Queue):
+    while not work_queue.empty():
+        count = work_queue.get()
         total = 0
         print(f'Task {name} running')
         for x in range(count):
@@ -13,7 +13,7 @@ def task(name, queue):
 
 
 def main():
-    work_queue = queue.Queue()
+    work_queue = Queue()
 
     for work in [8, 5, 3, 1]:
         work_queue.put(work)

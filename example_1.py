@@ -1,7 +1,7 @@
-import queue
+from queue import Queue
 
 
-def task(name, work_queue):
+def task(name, work_queue: Queue):
     if work_queue.empty():
         print(f'Task {name} nothing to do')
     else:
@@ -15,7 +15,7 @@ def task(name, work_queue):
 
 
 def main():
-    work_queue = queue.Queue()
+    work_queue = Queue()
 
     for work in [8, 5, 3, 1]:
         work_queue.put(work)
