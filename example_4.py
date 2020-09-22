@@ -16,7 +16,7 @@ async def task(name, work_queue):
 async def main():
     work_queue = asyncio.Queue()
 
-    for work in [15, 10, 5, 2]:
+    for work in [8, 5, 3, 1]:
         await work_queue.put(work)
 
     with Timer(text='\nTotal elapsed time: {:.1f}'):

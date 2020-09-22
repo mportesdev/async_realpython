@@ -17,7 +17,7 @@ def task(name, work_queue):
 def main():
     work_queue = queue.Queue()
 
-    for work in [15, 10, 5, 2]:
+    for work in [8, 5, 3, 1]:
         work_queue.put(work)
 
     tasks = [(task, 'One', work_queue), (task, 'Two', work_queue)]
