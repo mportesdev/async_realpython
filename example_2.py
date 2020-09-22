@@ -22,7 +22,7 @@ def main():
 
     done = False
     while not done:
-        for t in tasks:
+        for t in tasks[:]:
             try:
                 next(t)
             except StopIteration:

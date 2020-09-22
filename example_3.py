@@ -26,7 +26,7 @@ def main():
     done = False
     with Timer(text='\nTotal elapsed time: {:.1f}'):
         while not done:
-            for t in tasks:
+            for t in tasks[:]:
                 try:
                     next(t)
                 except StopIteration:
