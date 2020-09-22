@@ -1,3 +1,5 @@
+# https://realpython.com/python-async-features/#synchronous-blocking-http-calls
+
 import queue
 
 from codetiming import Timer

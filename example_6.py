@@ -1,3 +1,5 @@
+# https://realpython.com/python-async-features/#asynchronous-non-blocking-http-calls
+
 import asyncio
 
 import aiohttp

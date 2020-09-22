@@ -1,3 +1,5 @@
+# https://realpython.com/python-async-features/#cooperative-concurrency-with-blocking-calls
+
 from queue import Queue
 import time
 

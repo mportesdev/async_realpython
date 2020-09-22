@@ -1,3 +1,5 @@
+# https://realpython.com/python-async-features/#synchronous-programming
+
 from queue import Queue
 
 
